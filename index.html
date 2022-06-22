@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-compatible" content="IE-edge">
+	<meta name="viewport" content="with-device-width, initial-scale=1">
+
+	<title>Calculadora</title>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <script type="text/javascript" src="myjs.js"></script>
+
+</head>
+<body>
+
+	<div class="container">
+		
+		<div class="jumbotron">
+			<h1>CALCULADORA</h1>
+		</div>
+
+		<div class="row">
+            <div class="col-md-4">
+                <input type="number" name="primeiro" class="form-control" placeholder="insira o primeiro numero" id="p"><br>
+            </div>
+            <div class="col-md-4">
+            	 <select id="sinal" class="form-control">
+            	 	<option>Seleciona uma operação</option>
+            	 	<option value="1">Soma</option>
+            	 	<option value="2">subtração</option>
+            	 	<option value="3">Multiplicação</option>
+            	 	<option value="4">Divisão</option>
+            	 	</select>
+            </div>        
+			<div class="col-md-4">
+				 <input type="number" name="segundo" class="form-control" placeholder="insira o segundo numero" id="s">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+			 <button type="button" class="btn btn-lg btn-primary pull-right" onclick="soma()">Calcular</button>
+
+			</div>
+			
+		</div>
+		<br>
+		<br><br><br><br><br><br>				
+		<div class="row">
+			<div class="col-md-12">
+				<div class="well">
+				<label>
+				<span>resultado</span>
+				<input type="number" name="" class="form-control" readonly="O seu resultado será mostrado aqui!!!" id="r">
+				</label>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
